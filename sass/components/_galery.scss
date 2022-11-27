@@ -1,0 +1,41 @@
+.team {
+  padding-top: 0;
+}
+
+.gallery__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.gallery__list {
+  display: flex;
+}
+
+.gallery__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--main-text-color);
+  margin-bottom: 50px;
+}
+.overlay__box {
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  opacity: 1;
+}
+
+.overlay__text {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  color: var(--backround-color);
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  background: rgba(47, 48, 58, 0.8);
+}

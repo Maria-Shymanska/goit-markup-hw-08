@@ -1,0 +1,54 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  margin: -1px;
+}
+
+.benefits__list {
+  display: flex;
+  gap: 30px;
+}
+
+.benefits__icon {
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  display: flex;
+}
+
+.benefits__name {
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .hero-item:not(:last-child) {
+  margin-right: 30px;
+/* } */
+
+.benefits__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  margin-bottom: 10px;
+}
+
+.benefits-pre__title {
+  line-height: 1.71;
+  color: var(--secondary-text-color);
+}
