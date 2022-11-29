@@ -25,7 +25,8 @@
   border: none;
   background-color: transparent;
 }
-.mobile-menue-btn.is-open .icon-close {
+.mobile-menue-btn.is-open,
+.icon-close {
   display: block;
 }
 .icon-close {
