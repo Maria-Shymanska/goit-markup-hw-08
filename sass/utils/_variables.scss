@@ -14,3 +14,13 @@
   --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --form-border-color: rgba(33 33, 33, 0.2);
 }
+
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+
+  @media screen and (max-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
