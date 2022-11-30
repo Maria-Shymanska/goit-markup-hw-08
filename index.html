@@ -19,95 +19,97 @@
 
   <!-- ----------- HEADER-------------
 
-  <header class="header-page">
-    <div class="container header-container">
-      <nav class="header-nav">
-        <a class="link header-logo" href="./index.html"><span class="first-part">Web</span><span
-            class="last-part">Studio</span></a>
-        <ul class="header-nav-list list">
-          <li class="header-item current">
-            <a class="header-nav-link link" href="./index.html">Студія</a>
-          </li>
-          <li class="header-item">
-            <a class="header-nav-link link" href="./portfolio.html">Портфолiо</a>
-          </li>
-          <li class="header-item">
-            <a class="header-nav-link link" href="">Контакти</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="header-list list">
-        <li class="header-item">
-          <a class="header-link-mail link" href="mailto:info@devstudio.com">
-            <svg class="icon-mail" width="16" height="12">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
-            info@devstudio.com
-          </a>
+ <!-- <!-- <header class="header-page"> -->
+  <div class="container header-container">
+    <nav class="header-nav">
+      <a class="link header-logo" href="./index.html"><span class="first-part">Web</span><span
+          class="last-part">Studio</span></a>
+      <ul class="header-nav-list list">
+        <li class="header-item current">
+          <a class="header-nav-link link" href="./index.html">Студія</a>
         </li>
         <li class="header-item">
-          <a class="header-tel link" href="tel:+380961111111">
-            <svg class="icon-phone" width="10" height="16">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
-            +380961111111
-          </a>
+          <a class="header-nav-link link" href="./portfolio.html">Портфолiо</a>
         </li>
-      </ul>
-    </div>
-  </header> -->
-
-
-
-  <!-- mobile-view -->
-
-  <div class="mobile-menue-container is-open" id="menue-container" data-menue>
-    <button class="mobile-menue-btn is-open" type="button" aria-expanded="false" aria-controls="menue-container"
-      data-menue-btn>
-      <svg width="40" height="40" aria-label="Menue switch">
-        <use class="icon-menue" href="./images/icons.svg#icon-menu"></use>
-        <use class="icon-close" href="./images/icons.svg#icon-close"></use>
-      </svg>
-    </button>
-
-    <nav class="mobile-nav-menu">
-      <ul class="mobile-nav list">
-        <li class="mobile-nav-list">
-          <a class="mobile-nav-link link current" href="./index.html">Студія</a>
-        </li>
-        <li class="mobile-nav-list">
-          <a class="mobile-nav-link link" href="./portfolio.html">Портфоліо</a>
-        </li>
-        <li class="mobile-nav-list">
-          <a class="mobile-nav-link link" href="./index.html">Контакти</a>
+        <li class="header-item">
+          <a class="header-nav-link link" href="">Контакти</a>
         </li>
       </ul>
     </nav>
-
-    <ul class="mobile-contact-nav list">
-      <li class="mobile-link">
-        <a class="mobile-link-tel link" href="tel:+380961111111"> +38 096 111 11 11</a>
+    <button type="button" class="burger-btn" data-menu-button>
+      <svg class="burger-icon">
+        <use href="./image/icon/sprite.svg#icon-menu"></use>
+      </svg>
+    </button>
+    <ul class="header-list list">
+      <li class="header-item">
+        <a class="header-link-mail link" href="mailto:info@devstudio.com">
+          <svg class="icon-mail" width="16" height="12">
+            <use href="./images/icons.svg#icon-email"></use>
+          </svg>
+          info@devstudio.com
+        </a>
       </li>
-      <li class="mobile-link">
-        <a class="mobile-link-mail link" href="mailto:info@devstudio.com">info@devstudio.com </a>
-      </li>
-    </ul>
-
-    <ul class="mobile-social-list list">
-      <li class="mobile-social-item">
-        <a class="mobile-social-link link" href="https://www.instagram.com/">Instagram</a>
-      </li>
-      <li class="mobile-social-item">
-        <a class="mobile-social-link link" href="https://twitter.com/">Twitter</a>
-      </li>
-      <li class="mobile-social-item">
-        <a class="mobile-social-link link" href="https://www.facebook.com/">Facebook</a>
-      </li>
-      <li class="mobile-social-item">
-        <a class="mobile-social-link link" href="https://www.linkedin.com/">LinkedIn</a>
+      <li class="header-item">
+        <a class="header-tel link" href="tel:+380961111111">
+          <svg class="icon-phone" width="10" height="16">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
+          +380961111111
+        </a>
       </li>
     </ul>
   </div>
+
+  mobile-view
+
+
+  <div class="mobile-menu" data-menu>
+    <div class="header">
+      <button type="button" class="mobile-close-btn" data-menu-close>
+        <svg class="mobile-close-icon">
+          <use href="./image/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-header-nav">
+      <ul class="site-nav">
+        <li class="item">
+          <a class="link-nav link current" href="./index.html">Студия</a>
+        </li>
+        <li class="item">
+          <a class="link-nav link" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="item"><a class="link-nav link" href="">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-kontakt-social">
+      <ul class="mobile-kontakt-nav">
+        <li class="item">
+          <a class="tel-mail link tel" href="tel:+380961111111"> +38 096 111 11 11 </a>
+        </li>
+        <li class="item">
+          <a class="tel-mail link mail" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+      <ul class="mobile-social">
+        <li class="item">
+          <a href="" class="mobile-social-link link">Instagram</a>
+        </li>
+        <li class="item"><a href="" class="mobile-social-link link">Twitter</a></li>
+        <li class="item">
+          <a href="" class="mobile-social-link link">Facebook</a>
+        </li>
+        <li class="item">
+          <a href="" class="mobile-social-link link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </header>
+
 
 
 
@@ -526,9 +528,8 @@
 
   <!-- footer -->
 
-
-  <!-- <section>
-    <footer class="footer">
+  <!-- <footer class="footer">
+    <section class="section">
       <div class="footer-container container">
         <div class="address">
           <a class="footer-logo link" href="./index.html"><span class="first-part">Web</span><span
