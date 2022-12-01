@@ -1,12 +1,9 @@
 .menu {
-  text-decoration: none;
-}
-
-.menu {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
+  text-decoration: none;
 }
 
 .menu-toggle {
@@ -96,7 +93,7 @@
     margin-bottom: 30px;
   }
 }
-.mobile-socials__item:not(:last-child)::after {
+.mobile-socials__item:not(:last-child) {
   content: '';
   margin-left: 10px;
   margin-right: 10px;
