@@ -7,15 +7,18 @@
 }
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+
+  @media screen and (min-width: $desktop) {
+    justify-content: space-between;
+  }
 }
 
 .clients__item {
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 92px;
-  gap: 30px;
+  @media screen and (max-width: 767px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 
 .clients__link {
@@ -33,6 +36,13 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @media screen and (min-width: $mobile) {
+    width: 210px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 170px;
   }
 }
 

@@ -15,14 +15,28 @@
 
 .benefits__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+}
+
+.benefits__item {
+  margin-bottom: 30px;
+}
+.benefits__item {
+  @media screen and (min-width: 767px) and (max-with: 1199px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+  }
 }
 
 .benefits__icon {
   justify-content: center;
-  text-align: center;
+  align-items: center;
   gap: 30px;
   display: flex;
+  height: 120px;
 }
 
 .benefits__name {
@@ -46,9 +60,19 @@
   text-transform: uppercase;
   color: var(--main-text-color);
   margin-bottom: 10px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .benefits-pre__title {
+  font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+
+  @media screen and (min-width: $mobile) {
+    width: 100%;
+  }
 }

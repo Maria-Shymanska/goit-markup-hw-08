@@ -518,7 +518,7 @@ img {
   fill: var(--accent-color);
 }
 /* --BENEFITS-- */
-
+/* 
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -573,6 +573,7 @@ img {
   line-height: 1.71;
   color: var(--secondary-text-color);
 }
+*/
 
 /* --GALERY-- */
 
