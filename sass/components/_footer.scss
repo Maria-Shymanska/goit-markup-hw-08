@@ -17,6 +17,11 @@
   background-color: var(--background-footer-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (max-width: 1199px) {
+    .footer {
+      text-align: center;
+    }
+  }
 }
 
 .footer-address {
