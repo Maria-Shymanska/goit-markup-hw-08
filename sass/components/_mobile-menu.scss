@@ -9,9 +9,9 @@
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -81,7 +81,7 @@
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  .mobile-contacts__link-email {
+  .mobile-contacts .link-email {
     font-size: 24px;
     color: #212121;
   }
@@ -93,7 +93,13 @@
     margin-bottom: 30px;
   }
 }
-.mobile-socials__item:not(:last-child) {
+
+.mobile-socials {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
+}
+.mobile-socials__item:not(:last-child)::after {
   content: '';
   margin-left: 10px;
   margin-right: 10px;
