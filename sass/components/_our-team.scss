@@ -1,12 +1,11 @@
 .socials-list {
-  // display: flex;
-  // justify-content: center;
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  row-gap: 10px;
+  gap: 10px;
 }
 
 .about-list {
-  // display: flex;
   gap: 30px;
 }
 

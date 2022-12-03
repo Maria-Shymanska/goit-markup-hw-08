@@ -19,13 +19,10 @@
   gap: 30px;
 }
 
-.benefits__item {
+.benefits__item:not(:last-child) {
   margin-bottom: 30px;
 }
 .benefits__item {
-  @media screen and (min-width: 767px) and (max-with: 1199px) {
-    flex-basis: calc((100% - 30px) / 2);
-  }
   @media screen and (min-width: $desktop) {
     width: 270px;
   }
@@ -49,9 +46,9 @@
   justify-content: center;
 }
 
-/* .hero-item:not(:last-child) {
+.benefits-item:not(:last-child) {
   margin-right: 30px;
-/* } */
+}
 
 .benefits__title {
   font-weight: 700;
