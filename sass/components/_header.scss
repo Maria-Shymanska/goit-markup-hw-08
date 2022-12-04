@@ -3,9 +3,11 @@
   align-items: center;
   justify-content: space-between;
 }
-
-.header-nav {
-  display: none;
+.header-nav-list {
+  @media screen and (min-width: $tablet) {
+    display: none;
+    margin-left: 93px;
+  }
 }
 
 .header-list {
@@ -13,8 +15,15 @@
   margin-left: auto;
   align-items: center;
   gap: 50px;
-}
 
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+  }
+}
 .header-logo {
   font-family: 'Raleway';
   font-weight: 700;
@@ -52,7 +61,6 @@
     padding-top: 0;
   }
 }
-
 .header-link-mail {
   font-style: normal;
   font-weight: 500;
