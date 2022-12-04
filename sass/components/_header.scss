@@ -1,6 +1,11 @@
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav {
+  display: none;
 }
 
 .header-list {
@@ -8,11 +13,6 @@
   margin-left: auto;
   align-items: center;
   gap: 50px;
-}
-.header-list {
-  @media (max-width: $mobile) {
-    display: none;
-  }
 }
 
 .header-logo {
@@ -24,6 +24,9 @@
   &:hover,
   &:focus {
     color: #188ce8;
+  }
+  @media screen and (max-width: $mobile) {
+    padding-top: 0;
   }
 }
 
