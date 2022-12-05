@@ -2,14 +2,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 .header-nav-list {
-  @media screen and (min-width: $tablet) {
-    display: none;
-    margin-left: 93px;
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+    margin-left: 87px;
+    gap: 30px;
   }
 }
-
 .header-list {
   display: flex;
   margin-left: auto;
@@ -97,7 +98,6 @@
 }
 
 .header-item {
-  position: relative;
   display: block;
   text-decoration: none;
 }
