@@ -1,9 +1,11 @@
 .menu {
   display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+  }
 }
 
 .menu-toggle {
@@ -44,7 +46,7 @@
   transform: translateX(0);
 }
 .menu-container .menu-toggle {
-  position: static;
+  position: absolute;
   top: 10px;
   right: 15px;
   fill: #212121;
@@ -81,12 +83,18 @@
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  .mobile-contacts .link-email {
+
+  .mobile-contacts__link-email {
+    font-weight: 500;
     font-size: 24px;
-    color: #212121;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: #757575;
   }
   .mobile-contacts__link-phone {
     font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
     color: #2196f3;
   }
   .mobile-contacts__item:not(:last-child) {

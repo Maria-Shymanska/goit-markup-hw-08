@@ -1,5 +1,9 @@
 .team {
   padding-top: 0;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 
 .gallery__item:not(:last-child) {
