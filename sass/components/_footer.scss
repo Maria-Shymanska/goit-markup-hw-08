@@ -1,20 +1,7 @@
 .footer-container {
   display: block;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-box-align: baseline;
-    -ms-flex-align: baseline;
-    align-items: baseline;
-  }
-}
+
 @media screen and (min-width: 1200px) {
   .footer-container {
     display: -webkit-box;
