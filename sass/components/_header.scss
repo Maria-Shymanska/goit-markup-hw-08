@@ -4,24 +4,26 @@
   justify-content: space-between;
   position: relative;
 }
-.header-nav-list {
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+
+@media screen and (min-width: $tablet) and (width: $desctop) {
+  .header-nav-list {
     display: flex;
     margin-left: 87px;
     gap: 30px;
   }
 }
+
 .header-list {
   display: flex;
   margin-left: auto;
   align-items: center;
   gap: 50px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet) {
     display: none;
   }
 
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: $desctop) {
     display: block;
   }
 }
@@ -31,12 +33,12 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: block;
   &:hover,
   &:focus {
     color: #188ce8;
-  }
-  @media screen and (max-width: $mobile) {
-    padding-top: 0;
   }
 }
 
@@ -57,10 +59,6 @@
   padding-bottom: 32px;
   display: block;
   transition: color 250ms var(--animation-timing-function);
-
-  @media screen and (max-width: $mobile) {
-    padding-top: 0;
-  }
 }
 .header-link-mail {
   font-style: normal;

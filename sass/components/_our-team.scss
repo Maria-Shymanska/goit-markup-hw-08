@@ -1,23 +1,35 @@
-.socials-list {
+.section-team {
+  background-color: #f5f4fa;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    flex-wrap: nowrap;
+  }
 }
 
 .about-list {
   gap: 30px;
 }
 
-.about-item:not(:last-child) {
-  gap: 30px;
+@media screen and (max-width: $tablet) {
+  .about-item:not(:last-child) {
+    gap: 30px;
+  }
 }
+
 .img-text {
   padding-top: 30px;
   padding-bottom: 30px;
-}
-.section-team {
-  background-color: #f5f4fa;
 }
 
 .about-item {
@@ -37,9 +49,9 @@
 .about-item:hover .workers-img {
   transform: scale(1.2);
 }
-.about-item {
-  gap: 30px;
-}
+// .about-item {
+//   gap: 30px;
+// }
 
 .about-our-team {
   font-weight: 700;
