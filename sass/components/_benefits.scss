@@ -16,14 +16,17 @@
 .benefits__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
 }
 
-.benefits__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .benefits__item:not(:last-child) {
+    margin-bottom: 30px;
+    display: block;
+  }
 }
-.benefits__item {
-  @media screen and (min-width: $desktop) {
+
+@media screen and (min-width: $desktop) {
+  .benefits__item {
     width: 270px;
   }
 }
@@ -46,7 +49,7 @@
   justify-content: center;
 }
 
-.benefits-item:not(:last-child) {
+.benefits__item:not(:last-child) {
   margin-right: 30px;
 }
 

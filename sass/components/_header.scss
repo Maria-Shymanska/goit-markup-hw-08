@@ -5,12 +5,10 @@
   position: relative;
 }
 
-@media screen and (min-width: $tablet) and (width: $desctop) {
-  .header-nav-list {
-    display: flex;
-    margin-left: 87px;
-    gap: 30px;
-  }
+.header-nav-list {
+  display: flex;
+  margin-left: 87px;
+  gap: 30px;
 }
 
 .header-list {
@@ -109,5 +107,10 @@
     left: 0;
     content: '';
     margin-bottom: -1px;
+  }
+}
+.header-nav {
+  @media screen and (max-width: $tablet) {
+    display: none;
   }
 }

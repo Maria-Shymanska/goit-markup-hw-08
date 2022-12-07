@@ -38,9 +38,14 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 1199.98px) {
+    width: 100%;
     max-width: 450px;
-    max-height: 609px;
+    min-height: 609px;
+  }
+  @media screen and (min-width: $desctop) {
+    width: 528px;
+    min-height: 581px;
   }
 }
 

@@ -203,8 +203,8 @@ img {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/image1.jpg);
+  /* background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/image1.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -518,7 +518,6 @@ img {
   fill: var(--accent-color);
 }
 /* --BENEFITS-- */
-/* 
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -556,9 +555,9 @@ img {
   justify-content: center;
 }
 
-/* .hero-item:not(:last-child) {
+.hero-item:not(:last-child) {
   margin-right: 30px;
-/* } */
+}
 
 .benefits__title {
   font-weight: 700;
@@ -573,7 +572,6 @@ img {
   line-height: 1.71;
   color: var(--secondary-text-color);
 }
-*/
 
 /* --GALERY-- */
 
