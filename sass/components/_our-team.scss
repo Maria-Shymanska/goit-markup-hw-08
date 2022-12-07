@@ -1,7 +1,6 @@
 .section-team {
   background-color: #f5f4fa;
   display: flex;
-  flex-wrap: wrap;
 
   @media screen and (min-width: 768px) {
     display: block;
@@ -31,8 +30,8 @@
   -ms-flex-pack: center;
   justify-content: center;
 
-  @media screen and (min-width: 1200px) {
-    flex-wrap: nowrap;
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
     align-items: center;
   }
 }

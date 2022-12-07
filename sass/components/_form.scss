@@ -25,8 +25,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 528px;
-  min-height: 581px;
+  width: 528px;
+  height: 581px;
   padding: 40px 40px;
   visibility: visible;
   opacity: 1;
@@ -38,14 +38,16 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  @media screen and (max-width: 1199.98px) {
-    width: 100%;
+  @media screen and (max-width: 1199px) {
+    width: 95%;
     max-width: 450px;
-    min-height: 609px;
+    height: 95%;
+    max-height: 609px;
+    overflow: scroll;
   }
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $decstop) {
     width: 528px;
-    min-height: 581px;
+    height: 581px;
   }
 }
 

@@ -758,11 +758,17 @@ img {
   display: flex;
   align-items: baseline;
 }
+
 .socials-list-list {
   display: flex;
   justify-content: center;
-  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 10px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .container-icon {
