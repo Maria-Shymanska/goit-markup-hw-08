@@ -129,22 +129,23 @@ img {
   margin: -1px;
 }
 
-@media screen and (max-width: 1199px) {
-  .benefits__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 30px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .benefits__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .benefits__item {
-    width: 354px;
+    max-width: 270px;
   }
 }
-.benefits__icon {
+.benefits__item .benefits__icon {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -152,13 +153,9 @@ img {
       -ms-flex-align: center;
           align-items: center;
   gap: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   height: 120px;
 }
-
-.benefits__name {
+.benefits__item .benefits__name {
   height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
@@ -173,8 +170,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
-.benefits__title {
+.benefits__item .benefits__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -183,19 +179,18 @@ img {
   margin-bottom: 10px;
 }
 @media screen and (max-width: 767px) {
-  .benefits__title {
+  .benefits__item .benefits__title {
     text-align: center;
   }
 }
-
-.benefits-pre__title {
+.benefits__item .benefits-pre__title {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 @media screen and (min-width: 480px) {
-  .benefits-pre__title {
+  .benefits__item .benefits-pre__title {
     width: 100%;
   }
 }
@@ -1240,6 +1235,25 @@ img {
   gap: 10px;
 }
 
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.address {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @media screen and (max-width: 1199px) {
   .address {
     margin-bottom: 60px;
@@ -1248,6 +1262,9 @@ img {
 @media screen and (min-width: 1200px) {
   .address {
     width: 231px;
+  }
+  .container-icon {
+    margin-left: 70px;
   }
   .footer-address {
     margin-top: 20px;
