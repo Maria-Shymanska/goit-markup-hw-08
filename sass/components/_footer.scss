@@ -12,7 +12,14 @@
 
 .footer-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.address {
+  text-align: center;
+  justify-content: center;
+}
 
 @media screen and (max-width: 1199px) {
   .address {
@@ -24,16 +31,9 @@
     width: 231px;
   }
 
-  .socials-list-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .container-icon {
-    margin-left: 70px;
-  }
+  // .container-icon {
+  //   margin-left: 70px;
+  // }
 
   .footer-address {
     margin-top: 20px;
@@ -56,15 +56,6 @@
     transition: color 250ms var(--animation-timing-function);
   }
 
-  .text-footer {
-    font-weight: 700;
-    line-height: 1.14;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    color: var(--backround-color);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-
   .container-icon {
     @media screen and (max-width: 1199px) {
       margin-bottom: 60px;
@@ -76,6 +67,16 @@
       margin-left: 70px;
       flex-direction: column;
     }
+  }
+
+  .text-footer {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--backround-color);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   .socials-link-item {
@@ -99,119 +100,116 @@
   .socials-icon-footer {
     fill: currentColor;
   }
+
   .sign-up {
     margin-left: auto;
   }
+
   .sign-up-with-btn {
     gap: 12px;
+  }
+  .sign-up-form {
+    justify-content: center;
+  }
 
-    .sign-up-form {
-      display: flex;
-      justify-content: center;
+  .sign-up-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--backround-color);
+    margin-bottom: 20px;
+  }
+  .sign-up-button {
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 1199px) {
+      margin: auto;
+      margin-top: 20px;
     }
+  }
+  .sign-up-input {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    color: var(--secondary-text-color);
+    padding-left: 20px;
+  }
 
-    .sign-up-title {
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1.14;
-      text-transform: uppercase;
-      color: var(--backround-color);
-      margin-bottom: 20px;
-    }
-    .sign-up-button {
-      display: flex;
-      gap: 12px;
-      align-items: center;
-      justify-content: center;
+  .input-container {
+    position: relative;
 
-      @media screen and (max-width: 1199px) {
-        margin: auto;
-        margin-top: 20px;
-        display: block;
-      }
-    }
-    .sign-up-input {
-      width: 100%;
-      height: 50px;
-      background-color: transparent;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      border-radius: 4px;
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-      color: var(--secondary-text-color);
-      padding-left: 20px;
-    }
-
-    .input-container {
-      position: relative;
-
-      @media screen and (min-width: $mobile) {
-        display: block;
-      }
-    }
-
-    .form-with-label {
+    @media screen and (min-width: $mobile) {
       display: block;
-      font-size: 16px;
-      line-height: 1.25;
-      color: rgba(255, 255, 255, 0.6);
     }
+  }
 
-    .sign-up-button {
-      display: flex;
-      align-items: center;
-      text-align: center;
-      background-color: var(--accent-color);
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1.87;
-      color: var(--backround-color);
-      border: none;
-      padding: 10px 28px;
-      width: 200px;
-      height: 50px;
-      letter-spacing: 0.06em;
-      box-shadow: 0px 4px 4px rgba(0 0 0 / 15%);
-      border-radius: 4px;
-      cursor: pointer;
-    }
+  .form-with-label {
+    display: block;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
 
-    .footer-logo {
-      font-family: 'Raleway';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 26px;
-      line-height: 1.19;
-      letter-spacing: 0.03em;
-    }
+  .sign-up-button {
+    align-items: center;
+    text-align: center;
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--backround-color);
+    border: none;
+    padding: 10px 28px;
+    width: 200px;
+    height: 50px;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0 0 0 / 15%);
+    border-radius: 4px;
+    cursor: pointer;
+  }
 
-    .first-part {
-      color: #2196f3;
-    }
-    .second-part {
-      color: #ffffff;
-    }
+  .footer-logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
 
-    .footer-link-map {
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 1.71;
-      letter-spacing: 0.03em;
-      color: #ffffff;
-      transition: color 250ms var(--animation-timing-function);
-    }
+  .first-part {
+    color: #2196f3;
+  }
+  .second-part {
+    color: #ffffff;
+  }
 
-    .footer-link,
-    .footer-tel {
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 1.71;
-      letter-spacing: 0.03em;
-      color: var(--footer-text-color);
-      transition: color 250ms var(--animation-timing-function);
-    }
+  .footer-link-map {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    transition: color 250ms var(--animation-timing-function);
+  }
+
+  .footer-link,
+  .footer-tel {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--footer-text-color);
+    transition: color 250ms var(--animation-timing-function);
   }
 }
