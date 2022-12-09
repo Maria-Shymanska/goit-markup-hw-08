@@ -1266,9 +1266,9 @@ img {
 }
 @media screen and (min-width: 480px) {
   .footer-container {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     text-align: center;
   }
 }
@@ -1322,18 +1322,6 @@ img {
     margin-left: 0px;
     margin-bottom: 0px;
     margin-right: 70px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .sign-up-title {
-    width: 100%;
-    text-align: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .sign-up-title {
-    margin-left: auto;
   }
 }
 
@@ -1657,6 +1645,17 @@ img {
   border-radius: 4px;
 }
 
+.our-works {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .our-works {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .current a {
   color: #2196f3;
 }
@@ -1743,6 +1742,29 @@ img {
           justify-content: center;
   gap: 8px;
 }
+@media screen and (min-width: 480px) {
+  .filtres-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 8px;
+    -webkit-column-gap: 15px;
+       -moz-column-gap: 15px;
+            column-gap: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filtres-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filtres-list {
+    margin-bottom: 50px;
+  }
+}
 
 .progect-nav:hover,
 .progect-nav:focus {
@@ -1787,6 +1809,29 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+}
+@media screen and (min-width: 480px) {
+  .examples-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 8px;
+    -webkit-column-gap: 15px;
+       -moz-column-gap: 15px;
+            column-gap: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .examples-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .examples-list {
+    margin-bottom: 50px;
+  }
 }
 
 .img-portfolio-text {

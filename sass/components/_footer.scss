@@ -6,7 +6,7 @@
   display: flex;
 
   @media screen and (min-width: $mobile) {
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
   }
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
@@ -45,16 +45,15 @@
   }
 }
 
-.sign-up-title {
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
-    width: 100%;
-    text-align: center;
-  }
+// .sign-up-title {
+//   @media screen and (min-width: $tablet) and (max-width: 1199px) {
+//     width: 100%;
+//     text-align: center;
+//   }
 
-  @media screen and (min-width: $desctop) {
-    margin-left: auto;
-  }
-}
+//   @media screen and (min-width: $desctop) {
+//     margin-left: auto;
+//   }
 
 .sign-up-title {
   @media screen and (min-width: $desctop) {
