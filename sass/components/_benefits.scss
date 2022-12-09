@@ -13,19 +13,6 @@
   margin: -1px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .benefits__item {
-    flex-basis: calc((100% - 30px) / 2);
-  }
-}
-.benefits__item {
-  @media screen and (min-width: $tablet) {
-    max-width: 354px;
-  }
-  @media screen and (min-width: $desctop) {
-    max-width: 270px;
-  }
-
   .benefits__icon {
     justify-content: center;
     align-items: center;
