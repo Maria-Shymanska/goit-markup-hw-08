@@ -20,17 +20,18 @@
   @media screen and (min-width: $desctop) {
     display: flex;
     align-items: baseline;
+    justify-content: space-around;
   }
 }
 
-.address {
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 60px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 231px;
-  }
-}
+// .address {
+//   @media screen and (max-width: 1199px) {
+//     margin-bottom: 60px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     width: 231px;
+//   }
+// }
 .sign-up-title {
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     width: 100%;
@@ -66,7 +67,11 @@
     flex-direction: column;
   }
 }
-
+.container-icon {
+  @media screen and (min-width: $mobile) {
+    margin-bottom: 60px;
+  }
+}
 // .container-icon {
 //   margin-left: 70px;
 // }
