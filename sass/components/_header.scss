@@ -29,6 +29,12 @@
     display: block;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-list:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
 .header-logo {
   font-family: 'Raleway';
   font-weight: 700;
@@ -114,7 +120,7 @@
   }
 }
 .header-nav {
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 }

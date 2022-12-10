@@ -49,11 +49,10 @@
   }
 }
 
-.clients__item {
-  @media screen and (max-width: $tablet) {
-    flex-basis: calc((100% - 30px) / 2);
-  }
-}
+// .clients__item {
+//   @media screen and (max-width: $tablet) {
+//     flex-basis: calc((100% - 30px) / 2);
+//   }
 
 .clients__link {
   display: flex;
