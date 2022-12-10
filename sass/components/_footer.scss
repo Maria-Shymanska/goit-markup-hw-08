@@ -23,15 +23,12 @@
     justify-content: space-around;
   }
 }
-
-// .address {
-//   @media screen and (max-width: 1199px) {
-//     margin-bottom: 60px;
-//   }
-//   @media screen and (min-width: 1200px) {
-//     width: 231px;
-//   }
-// }
+@media screen and (min-width: $desctop) {
+  .sign-up-with-btn {
+    display: flex;
+    gap: 12px;
+  }
+}
 .sign-up-title {
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     width: 100%;
@@ -42,13 +39,13 @@
     margin-left: auto;
   }
 }
-.sign-up-title {
-  @media screen and (min-width: $desctop) {
-    margin: right 12px;
-    display: flex;
-    gap: 12px;
-  }
-}
+// .sign-up-title {
+//   @media screen and (min-width: $desctop) {
+//     margin: right 12px;
+//     display: flex;
+//     gap: 12px;
+//   }
+
 .sign-up-input {
   @media screen and (min-width: $desctop) {
     width: 358px;
@@ -129,12 +126,9 @@
   fill: currentColor;
 }
 
-.sign-up-with-btn {
-  gap: 12px;
+.sign-up-form {
+  justify-content: center;
 }
-// .sign-up-form {
-//   justify-content: center;
-// }
 
 .sign-up-title {
   font-weight: 700;
@@ -158,8 +152,11 @@
   @media screen and (min-width: $tablet) {
     width: 450px;
   }
-}
 
+  @media screen and (min-width: $desctop) {
+    width: 358px;
+  }
+}
 .form-with-label {
   display: block;
   font-size: 16px;
@@ -183,9 +180,9 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-}
-@media screen and (max-width: 1199px) {
-  .sign-up-button {
+
+  @media screen and (max-width: 1199px) {
+    display: block;
     margin: 0 auto;
     margin-top: 20px;
   }

@@ -43,9 +43,12 @@
 
 .hero-section {
   background-color: #2f303a;
-  // padding: 118px 0;
-  // text-align: center;
-  // height: 400px;
+
+  @media screen and (min-width: $mobile) {
+    padding: 118px 0;
+    text-align: center;
+    height: 400px;
+  }
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -69,11 +72,6 @@
     max-width: 360px;
     font-size: 26px;
     line-height: 1.62;
-
-    @media screen and (min-width: 1200px) {
-      // font-size: 26px;
-      // line-height: 1.62;
-    }
   }
 }
 

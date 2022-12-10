@@ -1290,6 +1290,14 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .sign-up-with-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 12px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .sign-up-title {
     width: 100%;
@@ -1299,16 +1307,6 @@ img {
 @media screen and (min-width: 1200px) {
   .sign-up-title {
     margin-left: auto;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .sign-up-title {
-    margin: right 12px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 12px;
   }
 }
 
@@ -1408,8 +1406,10 @@ img {
   fill: currentColor;
 }
 
-.sign-up-with-btn {
-  gap: 12px;
+.sign-up-form {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .sign-up-title {
@@ -1435,6 +1435,11 @@ img {
 @media screen and (min-width: 768px) {
   .sign-up-input {
     width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sign-up-input {
+    width: 358px;
   }
 }
 
@@ -1465,13 +1470,14 @@ img {
   border-radius: 4px;
   cursor: pointer;
 }
-
 @media screen and (max-width: 1199px) {
   .sign-up-button {
+    display: block;
     margin: 0 auto;
     margin-top: 20px;
   }
 }
+
 .footer-logo {
   font-family: "Raleway";
   font-style: normal;
@@ -1557,6 +1563,13 @@ img {
 .hero-section {
   background-color: #2f303a;
 }
+@media screen and (min-width: 480px) {
+  .hero-section {
+    padding: 118px 0;
+    text-align: center;
+    height: 400px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero-section {
     padding-top: 200px;
@@ -1584,6 +1597,7 @@ img {
     line-height: 1.62;
   }
 }
+
 .hero-btn {
   font-family: inherit;
   font-weight: 700;
