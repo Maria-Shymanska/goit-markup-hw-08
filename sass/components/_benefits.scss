@@ -1,4 +1,4 @@
-.benefits {
+.section {
   padding-top: 60px;
   padding-bottom: 0;
 
@@ -22,7 +22,7 @@
   margin: -1px;
 }
 .benefits__list {
-  display: block;
+  gap: 30px;
 
   @media screen and (min-width: $tablet) {
     display: flex;

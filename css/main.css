@@ -114,12 +114,12 @@ img {
   margin: -1px;
 }
 
-.benefits {
+.section {
   padding-top: 60px;
   padding-bottom: 0;
 }
 @media screen and (min-width: 1200px) {
-  .benefits {
+  .section {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -141,7 +141,7 @@ img {
 }
 
 .benefits__list {
-  display: block;
+  gap: 30px;
 }
 @media screen and (min-width: 768px) {
   .benefits__list {
@@ -279,6 +279,9 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 1200px) {
   .clients__list {
@@ -312,6 +315,11 @@ img {
 @media screen and (min-width: 480px) {
   .clients__link {
     width: 210px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 226px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -706,11 +714,8 @@ img {
   fill: var(--accent-color);
 }
 
-.team {
-  padding-top: 0;
-}
-@media screen and (max-width: 1200px) {
-  .team {
+@media screen and (max-width: 1199px) {
+  .gallery {
     display: none;
   }
 }
@@ -786,7 +791,7 @@ img {
   margin-left: 87px;
   gap: 30px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header-nav-list {
     display: none;
   }
@@ -802,7 +807,7 @@ img {
           align-items: center;
   gap: 50px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header-list {
     display: none;
   }
@@ -921,11 +926,6 @@ img {
   }
 }
 
-.section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: var(--section-color);
-}
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
@@ -1317,6 +1317,7 @@ img {
 @media screen and (max-width: 1199px) {
   .address {
     margin-bottom: 60px;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1339,7 +1340,12 @@ img {
     margin-bottom: 60px;
   }
 }
-
+@media screen and (min-width: 480px) {
+  .sign-up {
+    text-align: center;
+    margin-top: 60px;
+  }
+}
 .footer-address {
   margin-top: 20px;
 }
@@ -1572,6 +1578,7 @@ img {
     padding-top: 200px;
     padding-bottom: 200px;
     height: 600px;
+    max-width: 1600px;
   }
 }
 

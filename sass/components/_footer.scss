@@ -39,12 +39,6 @@
     margin-left: auto;
   }
 }
-// .sign-up-title {
-//   @media screen and (min-width: $desctop) {
-//     margin: right 12px;
-//     display: flex;
-//     gap: 12px;
-//   }
 
 .sign-up-input {
   @media screen and (min-width: $desctop) {
@@ -55,6 +49,7 @@
 .address {
   @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
+    text-align: center;
   }
 
   @media screen and (min-width: 1200px) {
@@ -64,15 +59,17 @@
     flex-direction: column;
   }
 }
-.container-icon {
-  @media screen and (min-width: $mobile) {
+@media screen and (min-width: $mobile) {
+  .container-icon {
     margin-bottom: 60px;
   }
 }
-// .container-icon {
-//   margin-left: 70px;
-// }
-
+@media screen and (min-width: $mobile) {
+  .sign-up {
+    text-align: center;
+    margin-top: 60px;
+  }
+}
 .footer-address {
   margin-top: 20px;
 }
