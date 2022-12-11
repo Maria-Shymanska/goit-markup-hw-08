@@ -92,12 +92,6 @@ img {
   padding-bottom: 94px;
   padding-top: 94px;
 }
-@media screen and (max-width: 1200px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
 
 .visually-hidden {
   position: absolute;
@@ -117,12 +111,6 @@ img {
 .section {
   padding-top: 60px;
   padding-bottom: 0;
-}
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 .visually-hidden {
@@ -225,6 +213,11 @@ img {
   .benefits-pre__title {
     width: 100%;
   }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (max-width: 768px) {
@@ -789,7 +782,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   margin-left: 87px;
-  gap: 30px;
+  gap: 50px;
 }
 @media screen and (max-width: 767px) {
   .header-nav-list {
@@ -912,12 +905,32 @@ img {
 .current a {
   color: var(--accent-color);
 }
-.current a .header-item.current::after {
+
+@media screen and (min-width: 1200px) {
+  .current::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    margin-bottom: -1px;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+  }
+}
+.header-item.current::after {
   position: absolute;
   bottom: 0;
   left: 0;
   content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
   margin-bottom: -1px;
+  border-radius: 4px;
+  background-color: var(--accent-color);
 }
 
 @media screen and (max-width: 768px) {

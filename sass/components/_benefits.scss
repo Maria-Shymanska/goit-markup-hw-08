@@ -1,11 +1,6 @@
 .section {
   padding-top: 60px;
   padding-bottom: 0;
-
-  @media screen and (min-width: $desctop) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 .visually-hidden {
   position: absolute;
