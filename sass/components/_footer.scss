@@ -36,7 +36,7 @@
   }
 
   @media screen and (min-width: $desctop) {
-    margin-left: auto;
+    text-align: start;
   }
 }
 
@@ -54,22 +54,23 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    justify-content: center;
-
+    text-align: start;
     flex-direction: column;
   }
 }
-@media screen and (min-width: $mobile) {
-  .container-icon {
+.container-icon {
+  @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
+    text-align: center;
   }
 }
-@media screen and (min-width: $mobile) {
-  .sign-up {
+.sign-up {
+  @media screen and (max-width: 1199px) {
     text-align: center;
     margin-top: 60px;
   }
 }
+
 .footer-address {
   margin-top: 20px;
 }

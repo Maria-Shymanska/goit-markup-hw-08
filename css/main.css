@@ -128,9 +128,6 @@ img {
   margin: -1px;
 }
 
-.benefits__list {
-  gap: 30px;
-}
 @media screen and (min-width: 768px) {
   .benefits__list {
     display: -webkit-box;
@@ -148,6 +145,7 @@ img {
     display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    gap: 30px;
   }
 }
 
@@ -707,7 +705,12 @@ img {
   fill: var(--accent-color);
 }
 
-@media screen and (max-width: 1199px) {
+section {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1200px) {
   .gallery {
     display: none;
   }
@@ -898,29 +901,14 @@ img {
 }
 
 .header-item {
+  position: relative;
   display: block;
   text-decoration: none;
 }
-
-.current a {
+.header-item .current a {
   color: var(--accent-color);
 }
-
-@media screen and (min-width: 1200px) {
-  .current::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    margin-bottom: -1px;
-    border-radius: 4px;
-    background-color: var(--accent-color);
-  }
-}
-.header-item.current::after {
+.header-item .current::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -939,11 +927,8 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+.team {
+  padding-top: 0;
 }
 
 .about-list {
@@ -1316,7 +1301,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .sign-up-title {
-    margin-left: auto;
+    text-align: start;
   }
 }
 
@@ -1338,9 +1323,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    text-align: start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1348,17 +1331,20 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .container-icon {
     margin-bottom: 60px;
+    text-align: center;
   }
 }
-@media screen and (min-width: 480px) {
+
+@media screen and (max-width: 1199px) {
   .sign-up {
     text-align: center;
     margin-top: 60px;
   }
 }
+
 .footer-address {
   margin-top: 20px;
 }

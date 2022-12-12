@@ -2,6 +2,7 @@
   padding-top: 60px;
   padding-bottom: 0;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -17,8 +18,6 @@
   margin: -1px;
 }
 .benefits__list {
-  gap: 30px;
-
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -27,6 +26,7 @@
   @media screen and (min-width: $desctop) {
     display: flex;
     flex-wrap: nowrap;
+    gap: 30px;
   }
 }
 .benefits__item {
